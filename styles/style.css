@@ -16,6 +16,15 @@ html, body {
     height: 100px;
 }
 
+.pure-link {
+    text-decoration: none;
+    color: grey;
+}
+
+.pure-link:hover {
+    color: #b70909;
+}
+
     /* text highlighting */
 ::selection {
     background: #991313;
@@ -26,13 +35,6 @@ html, body {
     background: #991313;
     color: #fff;
 }
-
-@media(max-width: 768px) {
-    .whitespace {
-          display: none;
-    }
-}
-
 /*--------------- typewriter effect --------------- */
 .line {
     width: 24em;
@@ -46,7 +48,7 @@ html, body {
 }
 
 .anim-typewriter {
-    animation: typewriter 4s steps(40) 1s 1 normal both,
+    animation: typewriter 3.75s steps(40) 1s 1 normal both,
     blinkTextCussor 500ms steps(40) infinite normal;
 }
 
@@ -55,7 +57,7 @@ html, body {
           width: 0;
     }
     to {
-          width: 18em;
+          width: 13.3em;
     }
 }
 
@@ -65,7 +67,7 @@ html, body {
                 width: 0;
           }
           to {
-                width: 17em;
+                width: 13em;
           }
     }
 }
@@ -547,9 +549,6 @@ h6 {
 
 .copyright .row {
     text-align: center;
-    padding: 10px; /* Add padding for some space inside the border */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Border color and thickness */
-    border-radius: 15px; /* Rounded corners */
     display: inline-block; /* Ensure the border wraps tightly around the content */
     margin: 10px auto; /* Center the block with some margin */
 }
