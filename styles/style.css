@@ -318,6 +318,7 @@
         border-bottom: 2px solid #fff;
         border-right: 2px solid #fff;
         -webkit-transform: translate(-50%, 0) rotate(45deg);
+        transform: translate(-50%, 0) rotate(45deg);
         animation: fade_move_down 3s cubic-bezier(0.19, 1, 0.22, 1) infinite;
     }
     
