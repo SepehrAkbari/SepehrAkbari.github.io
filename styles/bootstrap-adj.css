@@ -1,0 +1,12 @@
+[data-bs-theme="dark"] {
+    --bs-body-bg: #0f0f0f; /* Replace with your desired background color */
+    --bs-body-color: #fff; /* Replace with your desired text color */
+}
+
+[data-bs-theme="dark"] input:focus,
+[data-bs-theme="dark"] textarea:focus,
+[data-bs-theme="dark"] select:focus {
+    border-color: #b70909; /* Replace with your desired focus border color */
+    box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25); /* Optional: Add shadow for a more prominent effect */
+}
+

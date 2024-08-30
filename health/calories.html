@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sepehr Akbari">
 
-    <title>Sepehr Akbari | Degree</title>
+    <title>Sepehr Akbari | Calories</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/styles/style.css">
@@ -39,9 +39,8 @@
             </span>
 
             <ul id="menu">
-                <li><a href="/academic/index.html">degree<span>.</span></a></li>
-                <li><a href="/academic/grade.html">grade<span>.</span></a></li>
-                <li><a class="active-tab" href="/academic/gpa.html">gpa<span>.</span></a></li>
+                <li><a href="/health/index.html">journey<span>.</span></a></li>
+                <li><a class="active-tab" href="/health/calories.html">calories<span>.</span></a></li>
             </ul>
 
             <div id="toggle">
@@ -53,55 +52,65 @@
             <div class="close-btn">close</div>
 
             <ul id="menu">
-                <li><a href="/academic/index.html">degree<span>.</span></a></li>
-                <li><a href="/academic/grade.html">grade<span>.</span></a></li>
-                <li><a class="active-tab" href="/academic/gpa.html">gpa<span>.</span></a></li>
+                <li><a href="/health/index.html">journey<span>.</span></a></li>
+                <li><a class="active-tab" href="/health/calories.html">calories<span>.</span></a></li>
             </ul>
         </div>
         <!--------------- navbar ends here --------------->
     <!--------------- content starts here --------------->
     <div class="whitespace"></div>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <h2>GPA: <span class="display" style="color:#b70909;">--</span></h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Calories: <span class="displayNG" style="color:#b70909;">--</span></h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p>This is what your body is expected to burn, without taking into account your activity level.</p>
+            </div>
         </div>
     </div>
-</div>
-<div class="container-fluid p-3"></div>
-<div class="container">
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Course</th>
-                <th scope="col">Credit</th>
-                <th scope="col">Grade(Letter)</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <div class="col-4">
-                    <td><input class="form-control" type="text" placeholder="Course" aria-label="default input example"></td>
-                    <td><input class="form-control" type="text" placeholder="Credit" aria-label="default input example"></td>
-                    <td><input class="form-control" type="text" placeholder="Grade" aria-label="default input example"></td>
-                </div>
-            </tr>
-        </tbody>
-    </table>
-</div>
-<div class="container">
-    <div class="row">
-        <div class="col-12">
-            <button type='button' class='btn btn-primary btn-lg site-btn'>Calculate</button>
-            <button type='button' class='btn btn-outline-success btn-lg'>+</button>
-            <button type='button' class='btn btn-outline-danger btn-lg'>-</button>
+    
+    <div class="container-fluid p-3"></div>
+    
+    <div class="container">
+        <div class="table-responsive"> <!-- Added table-responsive class -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Age</th>
+                        <th scope="col">Sex</th>
+                        <th scope="col">Height(cm)</th>
+                        <th scope="col">Weight(kg)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input class="form-control" type="text" placeholder="Age" aria-label="default input example"></td>
+                        <td>
+                            <select id="gender" class="form-select">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </td>
+                        <td><input class="form-control" type="text" placeholder="Height(cm)" aria-label="default input example"></td>
+                        <td><input class="form-control" type="text" placeholder="Weight(kg)" aria-label="default input example"></td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-</div>
-<div class="container-fluid p-3"></div>
-
-<!-- Custom JS -->
-<script src="script_gpa.js"></script>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <button type='button' class='btn btn-primary btn-lg site-btn'>Calculate</button>
+            </div>
+        </div>
+    </div>
+    <!-- Custom JS -->
+    <script src="script_calories.js"></script>
     <!--------------- content ends here --------------->
         <!--------------- footer starts here --------------->
         <div class="footer">
