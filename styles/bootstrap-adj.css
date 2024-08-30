@@ -10,8 +10,6 @@
     box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25); /* Optional: Add shadow for a more prominent effect */
 }
 
-[data-bs-theme="dark"] .btn-primary {
-    color: #fff; /* Replace with your desired text color */
-    background-color: #b70909; /* Replace with your desired background color */
-    border-color: #b70909; /* Replace with your desired border color */
+[data-bs-theme="dark"] {
+    --bs-primary: #b70909; /* Replace with your desired primary color */
 }
