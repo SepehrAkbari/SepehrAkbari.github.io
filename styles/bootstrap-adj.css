@@ -10,18 +10,18 @@
     box-shadow: 0 0 0 0.25rem rgba(233, 69, 96, 0.25); /* Optional: Add shadow for a more prominent effect */
 }
 
-[data-bs-theme="dark"] {
-    --bs-primary: #b70909; /* Replace with your desired primary color */
+:root {
+    --bs-primary-text-emphasis: #fff; /* Replace with your desired primary color */
 }
 
-[data-bs-theme="dark"] {
-    --accordion-color: #b70909; /* Replace with your desired accordion color */
-    --accordion-bg: #b70909; /* Replace with your desired accordion background color */
-    --accordion-border-color: #b70909; /* Replace with your desired accordion border color */
-    --accordion-button-color: #b70909; /* Replace with your desired accordion button color */
-    --accordion-button-bg: #b70909; /* Replace with your desired accordion button background color */
-    --accordion-button-hover-color: #b70909; /* Replace with your desired accordion button hover color */
-    --accordion-button-active-bg: #b70909; /* Replace with your desired accordion button active background color */
-    --accordion-button-active-color: #b70909; /* Replace with your desired accordion button active color */
-
+.accordion {
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.25);
+    --bs-accordion-active-bg: rgba(253, 13, 13, 0.10); /* Replace with your desired background color */
 }
+
+.accordion-button::after {
+    --bs-accordion-btn-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+    --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e") !important;
+}
+
+
