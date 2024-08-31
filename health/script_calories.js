@@ -5,6 +5,7 @@ const bmiRSpan = document.querySelector('span.displayBR'); // Get the span eleme
 const bmiRISpan = document.querySelector('span.displayBRI'); // Get the span element for bmi display
 const genderSelect = document.querySelector('select#gender'); // Get the gender select element (you would need to add this in HTML)
 
+// Get the table cells for displaying the calculated values
 const lsc = document.querySelector('td.l-s-c');
 const lmc = document.querySelector('td.l-m-c');
 const lfc = document.querySelector('td.l-f-c');
