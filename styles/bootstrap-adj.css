@@ -13,3 +13,15 @@
 [data-bs-theme="dark"] {
     --bs-primary: #b70909; /* Replace with your desired primary color */
 }
+
+[data-bs-theme="dark"] {
+    --accordion-color: #b70909; /* Replace with your desired accordion color */
+    --accordion-bg: #b70909; /* Replace with your desired accordion background color */
+    --accordion-border-color: #b70909; /* Replace with your desired accordion border color */
+    --accordion-button-color: #b70909; /* Replace with your desired accordion button color */
+    --accordion-button-bg: #b70909; /* Replace with your desired accordion button background color */
+    --accordion-button-hover-color: #b70909; /* Replace with your desired accordion button hover color */
+    --accordion-button-active-bg: #b70909; /* Replace with your desired accordion button active background color */
+    --accordion-button-active-color: #b70909; /* Replace with your desired accordion button active color */
+
+}
