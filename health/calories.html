@@ -75,37 +75,34 @@
     <div class="container-fluid p-3"></div>
     
     <div class="container">
-        <div class="table-responsive"> <!-- Added table-responsive class -->
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">Age</th>
-                        <th scope="col">Sex</th>
-                        <th scope="col">Height(cm)</th>
-                        <th scope="col">Weight(kg)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><input class="form-control" type="text" placeholder="Age" aria-label="default input example"></td>
-                        <td>
-                            <select id="gender" class="form-select">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                        </td>
-                        <td><input class="form-control" type="text" placeholder="Height(cm)" aria-label="default input example"></td>
-                        <td><input class="form-control" type="text" placeholder="Weight(kg)" aria-label="default input example"></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    
-    <div class="container">
         <div class="row">
-            <div class="col-12">
-                <button type='button' class='btn btn-primary btn-lg site-btn'>Calculate</button>
+            <div class="col">
+                <label for="age" class="form-label">Age</label>
+                <input id="age" class="form-control" type="text" placeholder="Age" aria-label="default input example">
+            </div>
+            <div class="col">
+                <label for="gender" class="form-label">Sex</label>
+                <select id="gender" class="form-select">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col">
+                <label for="height" class="form-label">Height (cm)</label>
+                <input id="height" class="form-control" type="text" placeholder="Height" aria-label="default input example">
+            </div>
+            <div class="col">
+                <label for="weight" class="form-label">Weight (kg)</label>
+                <input id="weight" class="form-control" type="text" placeholder="Weight" aria-label="default input example">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div>
+                <button type="button" class="btn btn-primary btn site-btn" style="width: 100%;">Calculate</button>
             </div>
         </div>
     </div>
