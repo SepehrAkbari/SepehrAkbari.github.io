@@ -1,4 +1,13 @@
 const ctx = document.getElementById('progressChart').getContext('2d');
+
+// Create a gradient fill for the background
+const gradient = ctx.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(153, 19, 19, 0.8)'); // Darker at the top
+gradient.addColorStop(0.25, 'rgba(153, 19, 19, 0.6)'); // Darker at the top
+gradient.addColorStop(0.5, 'rgba(153, 19, 19, 0.4)'); // Darker at the top
+gradient.addColorStop(0.75, 'rgba(153, 19, 19, 0.2)'); // Darker at the top
+gradient.addColorStop(1, 'rgba(153, 19, 19, 0)'); // Fades out at the bottom
+
 const progressChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -18,8 +27,7 @@ const progressChart = new Chart(ctx, {
             pointHoverBorderWidth: 2,
             pointHitRadius: 10,
             pointStyle: 'rectRounded',
-            backgroundColor: 'rgba(153, 19, 19, 0.2)'
-
+            backgroundColor: gradient // Apply the gradient background
         }]
     },
     options: {
@@ -61,7 +69,6 @@ const progressChart = new Chart(ctx, {
                             color: 'gray'
                         }
                     },
-
                     line2: {
                         type: 'line',
                         yMin: 54,
