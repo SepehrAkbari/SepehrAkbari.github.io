@@ -53,7 +53,7 @@
             <div class="close-btn">close</div>
 
             <ul id="menu">
-                <li><a class="active-tab" href="/academic/index.html">degree<span>.</span></a></li>
+                <li><a class="active-tab" href="/academic/index.html">bachelors<span>.</span></a></li>
                 <li><a href="/academic/grade.html">grade<span>.</span></a></li>
                 <li><a href="/academic/gpa.html">gpa<span>.</span></a></li>
             </ul>
@@ -66,20 +66,19 @@
         <div class="row">
             <div class="col-12" style="text-align: justify;">
                 <h2>
-                    Degree Audit
+                    Coursework @ LFC
                 </h2>
             </div>
         </div>
     </div>
 
-
-    <!-- MATH COURSES -->
+    <!--MAIN COURSES -->
     <!---text--->
     <div class="container">
         <div class="row">
             <div class="col-12" style="text-align: justify;">
                 <h4>
-                    Mathematics
+                    Main Courses
                 </h4>
             </div>
         </div>
@@ -87,34 +86,126 @@
 
     <!---table--->
     <div class="container">
-        <table class="table">
-            <thead class="table-light">
-                <tr>
-                    <th scope="col">Course</th>
-                    <th scope="col">Title</th>
-                    <th scope="col">Credits</th>
-                    <th scope="col">Grade</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>MATH 151</td>
-                    <td>Calculus I</td>
-                    <td>4</td>
-                    <td>A</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
-
-    <!-- CS COURSES -->
-    <div class="container">
-        <div class="row">
-            <div class="col-12" style="text-align: justify;">
-                <h4>
-                    Computer Science
-                </h4>
+        <div class="accordion" id="accordionExample">
+            <!-- MATH -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Mathematics Courses
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSCI 112</td>
+                                    <td colspan="2">Computer Science I</td>
+                                    <td>P</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 110</td>
+                                    <td>Calculus I</td>
+                                    <td>Fall23</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 150</td>
+                                    <td>Probability & Statistics</td>
+                                    <td>Spring24</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 240</td>
+                                    <td>Computational Math</td>
+                                    <td colspan="2">Fall23</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>MATH 250</td>
+                                    <td>Statistical Programming</td>
+                                    <td colspan="2">Fall24</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>CSCI 250</td>
+                                    <td>Programming for Data Applications</td>
+                                    <td colspan="2">Spring25</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- CS -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Computer Science Courses
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>ALL COURSES REQUIRED:</strong>
+                        <br>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CSCI 112</td>
+                                    <td colspan="2">Computer Science I</td>
+                                    <td>P</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 110</td>
+                                    <td>Calculus I</td>
+                                    <td>Fall23</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 150</td>
+                                    <td>Probability & Statistics</td>
+                                    <td>Spring24</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>MATH 240</td>
+                                    <td>Computational Math</td>
+                                    <td colspan="2">Fall23</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>MATH 250</td>
+                                    <td>Statistical Programming</td>
+                                    <td colspan="2">Fall24</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                                <tr>
+                                    <td>CSCI 250</td>
+                                    <td>Programming for Data Applications</td>
+                                    <td colspan="2">Spring25</td>
+                                    <!-- <td></td> -->
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -130,9 +221,103 @@
         </div>
     </div>
 
+    <!---table--->
+    <div class="container">
+        <div class="accordion" id="accordionExample">
+            <!-- 1 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        First-Year Studies &ensp;<span id="badge-span" class="badge text-bg-success">completed</span>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>FIYS 152</td>
+                                    <td>Politics of Population</td>
+                                    <td>Fall'23</td>
+                                    <td>A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        College Writing &ensp;<span id="badge-span" class="badge text-bg-success">completed</span>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>ALL COURSES REQUIRED:</strong>
+                        <br>
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>CW 100</td>
+                                    <td colspan="2">College Writing</td>
+                                    <td>Exempted</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        Creative Performing Arts &ensp;<span id="badge-span" class="badge text-bg-success">completed</span>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Code</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Semester</th>
+                                    <th scope="col">Grade</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><a href="https://www.lakeforest.edu/academics/majors-and-minors/art-and-art-history/course-descriptions">ART 142</a></td>
+                                    <td>Digital Design Foundations</td>
+                                    <td>Fall'23</td>
+                                    <td>A</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    
-    
     <div class="container-fluid p-3"></div>
     <!--------------- content ends here --------------->
         <!--------------- footer starts here --------------->
