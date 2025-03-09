@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="Sepehr Akbari">
 
-    <title>Sepehr Akbari</title>
+    <title>Sepehr Akbari | Home</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="/styles/style.css">
@@ -18,28 +18,357 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-    <!-- terminal effect -->
+    <!-- effect -->
     <script src="/styles/t.min.js"></script>
 
-    <!-- for on scroll animations -->
+    <!-- animations -->
     <link rel="stylesheet" href="/styles/animate.css">
     <script src="/styles/wow.min.js"></script>
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="/visuals/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
 </head>
 <body>
     <div class="wrapper">
-    <!--------------- content starts here --------------->
-        <!--------------- hero section starts here --------------->
-        <div class="hero">
-            <div class="header">
-                <h1 class="line anim-typewriter">coming very very soon...</h1>
+        <!--------------- navbar start --------------->
+        <a id="top"></a>
+        <nav>
+            <span id="brand">
+                <a href="#top">Sepehr Akbari</a>
+            </span>
+
+            <ul id="menu">
+                <li><a class="active-tab" href="/index.html">me<span>.</span></a></li>
+                <li><a href="/content/resume/SepehrAkbari_resume.pdf" download="">cv<span>.</span></a></li>
+            </ul>
+
+            <div id="toggle">
+                <div class="span">menu</div>
+            </div>
+        </nav>
+
+        <div id="resize">
+            <div class="close-btn"><img src="/images/close.svg" alt="close"></div>
+
+            <ul id="menu">
+                <li><a class="active-tab" href="/index.html">me<span>.</span></a></li>
+                <li><a href="/content/resume/SepehrAkbari_resume.pdf" download="">cv<span>.</span></a></li>
+            </ul>
+        </div>
+        <!--------------- navbar end --------------->
+    <!--------------- content start --------------->
+        <div class="whitespace"></div>
+        <div class="container">
+            <br><br>
+            <!--About-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">about me.</h5><br>
+                    <p class="wow fadeInUp pure-link" id="text-body" data-wow-delay="0.4s">I'm an undergraduate student at <a href="https://www.lakeforest.edu/" target="_blank">Lake Forest College</a> currently pursuing a Bachelor of Arts with a double major in Computer Science and Data Science, complemented by a minor in Mathematics. My academic journey has been driven by a deep fascination with technology and its potential to solve complex problems. I’m passionate about algorithm design, machine learning, and the rigorous analytical methods that underlie data-driven research.</p>
+                    <p class="wow fadeInUp" id="text-body" data-wow-delay="0.6s">My current research interest centers on leveraging AI and machine learning to build models that empower data-driven decision making. I am fascinated by how these models can optimize processes, reveal hidden patterns, and ultimately improve decision outcomes across various fields. At the same time, I am captivated by the promise of quantum computing and quantum-based algorithms, particularly their potential to enhance traditional ML models by introducing new paradigms in speed and accuracy. Exploring the interplay between AI/ML and quantum technologies is an exciting frontier that I believe will redefine our computational capabilities and problem-solving approaches.</p>
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Current-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">current endeavors.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.6s">
+                        <p id="text-body">
+                            <span id="title-li" class="wow fadeInUp">Courses:</span>
+                            <ul class="wow fadeInUp">
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-450" target="_blank">CSCI 450: Computer Vision & Machine Learning</a></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-231" target="_blank">MATH/CSCI 231: Linear Algebra</a></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-327" target="_blank">CSCI 327: Database Systems</a></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-250" target="_blank">CSCI 250: Programming for Data Applications</a></li>
+                            </ul>
+                            <span id="title-li" class="wow fadeInUp">Research:</span> <br><br>
+                            <p id="text-body">My current research project examines the "randomness" of number sequences by exploring both classical and quantum-based random number generators. I developed a quantum algorithm for generating random numbers, and using statistical analysis and machine learning, I evaluate the predictability of these sequences. The resulting model will be released as an R and Python package. 
+                                <br><br>
+                                This project is supervised by Dr. Andrew Gard and is set to conclude by May 2025.</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Teaching-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">teaching.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.75s">
+                        <p id="text-body">
+                            <ul>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/TA/TA-240-S25" target="_blank">(Teaching Assistant) – CSCI/MATH 240: Computational Mathematics</a><span id="date">[Spring 2025]</span>
+                                    <ul>
+                                        <li>Instructor: Sara Jamshidi</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/TA/TA-112-S25" target="_blank">(Teaching Assistant) – CSCI 112: Functional Programming</a><span id="date">[Spring 2025]</span>
+                                    <ul>
+                                        <li>Instructor: Tung Nguyen</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/TA/TA-107-S25" target="_blank">(Teaching Assistant) – CSCI 107: Web Programming</a><span id="date">[Spring 2025]</span>
+                                    <ul>
+                                        <li>Instructor: Tung Nguyen</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/TA/TA-112-F24" target="_blank">(Teaching Assistant) – CSCI 112: Functional Programming</a><span id="date">[Fall 2024]</span>
+                                    <ul>
+                                        <li>Instructor: Tung Nguyen</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/TA/TA-112-S24" target="_blank">(Teaching Assistant) – CSCI 112: Functional Programming</a><span id="date">[Spring 2024]</span>
+                                    <ul>
+                                        <li>Instructor: Zoya Mirza</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li>(Team Mentor) – Salam Dibaji Robotics Team <span id="date">[Summer 2023]</span>
+                                    <ul>
+                                        <li>Organizer: RoboCup Iran.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>  
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Projects-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">projects.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.75s">
+                        <p id="text-body">
+                            <ul>
+                                <li><a href="https://github.com/SepehrAkbari/Mini-Research/tree/main/CarbonEmissions-Prediction-Model" target="_blank">Building a carbon emissions prediction model</a><span id="date">[Winter 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/Mini-Projects/tree/main/Analysis-Spotifyr" target="_blank">Statistical hypotheses evaluation of Pink Floyd, using SpotifyR API</a><span id="date">[Winter 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/Mini-Research/tree/main/NuclearDecay-Modeling" target="_blank">Modeling nuclear decay using Euler & RK4 algorithms</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/Mini-Projects/tree/main/Analysis-MrTrashWheel" target="_blank">Data analysis: what does Mr. Trash Wheel's data suggest about Baltimorians?</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/Mini-Research/tree/main/GasPrices-Imputation" target="_blank">Imputing missing data in time series</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/Cool-Math/tree/main/Algorithming-Sudoku" target="_blank">Algorithming Sudoku with backtracking</a><span id="date">[Summer 2024]</span></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Work-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">work experience.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.75s">
+                        <p id="text-body">
+                            <ul>
+                                <li><span id="title-li">(Intern) Front-End Developer – <a href="https://www.tenacityapp.com/freelancer" target="_blank">Tenacity AI</a></span><span id="date">[Summer 2024]</span>
+                                    <ul>
+                                        <li>Engineered a user-centered mobile app with React Native, applying principles of usability and performance optimization.</li>
+                                        <li>Built and maintained a scalable company database using SQL and Supabase, emphasizing data integrity.</li>
+                                        <li>Integrated a ChatBot using OpenAI's GPT API to enhance interactive user engagement through natural language processing.</li>
+                                        <li>Implemented secure user authentication and OTP management to safeguard sensitive data.</li>
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><span id="title-li">(Intern) Database Developer – <a href="http://www.eesdubai.com/" target="_blank">Elite Engineering Solution</a></span><span id="date">[Summer 2023]</span>
+                                    <ul>
+                                        <li>Contributed to a comprehensive database migration project, designing robust data structures to support enterprise operations.</li>
+                                        <li>Developed custom employee data profiles, enhancing personalization beyond a standard login system.</li>
+                                        <li>Improved data security and accessibility through strategic development choices informed by best practices.</li>
+
+                                    </ul>
+                                </li>
+                                <br>
+                                <li><span id="title-li">(Intern) Programmer – <a href="http://www.lavan-energy.com/" target="_blank">Lavan Energy Group</a></span><span id="date">[Summer 2022]</span>
+                                    <ul>
+                                        <li>Designed and deployed the company website with a focus on responsive, user-centered design.</li>
+                                        <li>Created a secure internal document-sharing system, facilitating efficient collaboration among employees.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Courses-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">past courses.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.75s">
+                        <p id="text-body">
+                            <ul>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-240" target="_blank">CSCI/MATH 240: Computational Mathematics</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-230" target="_blank">MATH 230: Discrete & Abstract Mathematics</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-317" target="_blank">CSCI 317: Data Structures & Algorithms</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-250" target="_blank">MATH 250: Statistical Programming</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-270" target="_blank">CSCI 270: Web Development</a><span id="date">[Spring 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-150" target="_blank">MATH 150: Probablity & Statistics</a><span id="date">[Spring 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-212" target="_blank">CSCI 212: Object-Oriented Programming</a><span id="date">[Spring 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-111" target="_blank">MATH 111: Calculus II</a><span id="date">[Fall 2024]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/MATH-110" target="_blank">MATH 110: Calculus I</a><span id="date">[Fall 2023]</span></li>
+                                <li><a href="https://github.com/SepehrAkbari/LFC-courses/tree/main/CSCI-107" target="_blank">CSCI 107: Web Programming</a><span id="date">[Fall 2023]</span></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr class="wow fadeInUp" data-wow-delay="1s" id="seperator">
+            <!--Papers-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h5 class="wow fadeInUp" data-wow-delay="1.2s">papers.</h5><br>
+                    <div class="wow fadeInUp" data-wow-delay="0.75s">
+                        <!--BST Paper-->
+                        <p class="wow fadeInUp" id="text-body">
+                            <p class="d-inline-flex">
+                                <a data-bs-toggle="collapse" href="#bst-paper" aria-controls="bst-paper" id="arrow-lst">
+                                    <svg id="arrow-icon" width="20" height="20" viewBox="0 0 24 24">
+                                        <path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </p>
+                            <a href="content/paper/AA_EE_CS_SepehrAkbari.pdf" target="_blank">Measuring the Efficiency of Binary Search Trees</a><span id="date">[Fall 2022]</span>
+                            <div class="collapse" id="bst-paper">
+                                <p id="desc">This research specifically looks into two different binary search trees; the Splay Tree and the Adelson-Velskii and Landis Tree (AVL), and will compare their time complexity for the insertion of a given set of values. The term "time complexity" describes how long an algorithm takes to execute given a collection of input values of a specific size. Consequently, this research will explore “How the re-balancing algorithm efficiency of a Splay Tree compares to that of an Adelson-Velskii and Landis Tree in terms of time complexity upon insertion of values”.</p>
+                            </div>
+                        </p>
+                        <!--Egg Paper-->
+                        <p class="wow fadeInUp" id="text-body">
+                            <p class="d-inline-flex">
+                                <a data-bs-toggle="collapse" href="#egg-paper" aria-controls="egg-paper" id="arrow-lst">
+                                    <svg id="arrow-icon" width="20" height="20" viewBox="0 0 24 24">
+                                        <path d="M8 5l8 7-8 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </p>
+                            <a href="content/paper/ExploringAnEgg.pdf">Modeling a Chicken Egg</a><span id="date">[Fall 2022]</span>
+                            <div class="collapse" id="egg-paper">
+                                <p id="desc">This investigation finds an appropriate mathematical model for a chicken egg and compare them. Furthermore, I will calculate the volume of the egg, and the amount of eggshell on a chicken egg or its surface area.</p>
+                            </div>
+                        </p>
+
+                    </div>
+                </div>
             </div>
         </div>
-        <!--------------- hero section ends here --------------->
         
-    <!--------------- content ends here --------------->
-</div>
+    <!--------------- content end --------------->
+        <!--------------- footer start --------------->
+        <div class="footer">
+            <div class="container">
+                <br><br>
+
+                <div class="hr">
+                    <div class="row"></div>
+                </div>
+
+                <br>
+
+                <div class="info">
+                    <div class="row">
+                        <div class="col-lg-4" id="address">
+                            <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="mailto:isepehrakbari@gmail.com">isepehrakbari@gmail.com</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.4s"><a href="mailto:akbaris79@lakeforest.edu">akbaris79@lakeforest.edu</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.6s"><a href="tel:+18723193834">(872) 319-3834</a></h5>
+                            <br><br>
+                        </div>
+
+                        <div class="col-lg-4" id="media">
+                            <p class="wow fadeInUp" data-wow-delay="0s">connect</p>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/SepehrAkbari" target="_blank">github</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/sepehr-akbari/" target="_blank">linkedin</a></h5>
+                            <br><br>
+                        </div>
+
+                        <div class="col-lg-4" id="personal">
+                            <div id="theme-toggle" onclick="toggleTheme()">
+                                <h5 class="wow fadeInUp" data-wow-delay="0.6s">light mode</h5>
+                            </div>
+                            <p class="wow fadeInUp" data-wow-delay="1s">© 2025 Sepehr Akbari</p>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--------------- footer end --------------->
+        <br><br><br><br>
+    </div>
+
+    <!-- greensock -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+
+    // navigation
+
+    $("#toggle").click(function() {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    $("#resize ul li a").click(function() {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    $(".close-btn").click(function() {
+        $(this).toggleClass('on');
+        $("#resize").toggleClass("active");
+    });
+
+    // theme toggle
+    function toggleTheme() {
+        document.documentElement.classList.toggle("light-mode");
+        const toggleParagraph = document.querySelector("#theme-toggle h5");
+        if(document.documentElement.classList.contains("light-mode")){
+            toggleParagraph.textContent = "dark mode";
+        } else {
+            toggleParagraph.textContent = "light mode";
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all collapse elements on the page
+        var collapseElements = document.querySelectorAll('.collapse');
+
+        collapseElements.forEach(function(collapseElement) {
+            // Find the corresponding toggle using the href attribute
+            var toggle = document.querySelector('[data-bs-toggle="collapse"][href="#' + collapseElement.id + '"]');
+            if (toggle) {
+                collapseElement.addEventListener('show.bs.collapse', function () {
+                    toggle.classList.add('active');
+                });
+                collapseElement.addEventListener('hide.bs.collapse', function () {
+                    toggle.classList.remove('active');
+                });
+            }
+        });
+    });
+
+    // mobile menu animation
+
+    TweenMax.from("#brand", 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+    })
+
+    TweenMax.staggerFrom("#menu li a", 1, {
+        delay: 0.4,
+        opacity: 0,
+        ease: Expo.easeInOut
+    }, 0.1);
+
+    new WOW().init();
+
+    </script>
 </body>
 </html>
