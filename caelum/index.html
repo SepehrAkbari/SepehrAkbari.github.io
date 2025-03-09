@@ -77,9 +77,6 @@
                 <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <p>home &ensp;<a class="pure-link" href="https://sepehrakbari.github.io/real-index.html">sepehrakbari.github.io</a></p>
-                        <p>work &ensp;<a class="pure-link" href="https://sepehrakbari.github.io/portfolio/work.html">sepehrakbari.github.io/portfolio/work</a></p>
-                        <p>about &ensp;<a class="pure-link" href="https://sepehrakbari.github.io/portfolio/about.html">sepehrakbari.github.io/portfolio/about</a></p>
-                        <p>contact &ensp;<a class="pure-link" href="https://sepehrakbari.github.io/portfolio/contact.html">sepehrakbari.github.io/portfolio/contact</a></p>
                     </div>
                 </div>
             </div>
@@ -115,7 +112,7 @@
         </div>
     </div>
     <!--------------- content ends here --------------->
-        <!--------------- footer starts here --------------->
+        <!--------------- footer start --------------->
         <div class="footer">
             <div class="container">
                 <br><br>
@@ -126,62 +123,44 @@
 
                 <br>
 
-                <div class="collab">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p class="wow fadeInUp">Got an interesting project? Lets connect!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
                 <div class="info">
                     <div class="row">
-                        <div class="col-lg-4" id="personal">
-                            <p class="wow fadeInUp">contact me</p>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="tel:+18723193834">+1 (872) 319-3834</a></h4>
+                        <div class="col-lg-4" id="address">
+                            <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.2s"><a href="mailto:isepehrakbari@gmail.com">isepehrakbari@gmail.com</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.4s"><a href="mailto:akbaris79@lakeforest.edu">akbaris79@lakeforest.edu</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.6s"><a href="tel:+18723193834">(872) 319-3834</a></h5>
                             <br><br>
                         </div>
 
                         <div class="col-lg-4" id="media">
-                            <p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-
-                            <ul>
-                                <li id="li" class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://www.linkedin.com/in/sepehr-akbari/" target="_blank">li</a></li>
-                                <li id="gh" class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://github.com/SepehrAkbari" target="_blank">gh</a></li>
-                            </ul>
-
+                            <p class="wow fadeInUp" data-wow-delay="0s">connect</p>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.4s"><a href="https://github.com/SepehrAkbari" target="_blank">github</a></h5>
+                            <h5 class="wow fadeInUp" data-wow-delay="0.6s"><a href="https://www.linkedin.com/in/sepehr-akbari/" target="_blank">linkedin</a></h5>
                             <br><br>
                         </div>
 
-                        <div class="col-lg-4" id="address">
-                            <p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-                            <h4 class="wow fadeInUp" data-wow-delay="0.2s"><a href="mailto:isepehrakbari@gmail.com">isepehrakbari@gmail.com</a></h4>
+                        <div class="col-lg-4" id="personal">
+                            <div id="theme-toggle" onclick="toggleTheme()">
+                                <h5 class="wow fadeInUp" data-wow-delay="0.6s">light mode</h5>
+                            </div>
+                            <p class="wow fadeInUp" data-wow-delay="1s">© 2025 Sepehr Akbari</p>
                             <br><br>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <div class="row wow fadeInUp" data-wow-delay="1.2s">
-                        <div class="col-lg-12">
-                            <p>© 2025 Sepehr Akbari</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--------------- footer ends here --------------->
+        <!--------------- footer end --------------->
         <br><br><br><br>
     </div>
 
-    <!-- greensock cdn -->
+    <!-- greensock -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript">
 
-    // navigation starts here
+    // navigation
 
     $("#toggle").click(function() {
         $(this).toggleClass('on');
@@ -198,9 +177,36 @@
         $("#resize").toggleClass("active");
     });
 
-    // navigation ends here
+    // theme toggle
+    function toggleTheme() {
+        document.documentElement.classList.toggle("light-mode");
+        const toggleParagraph = document.querySelector("#theme-toggle h5");
+        if(document.documentElement.classList.contains("light-mode")){
+            toggleParagraph.textContent = "dark mode";
+        } else {
+            toggleParagraph.textContent = "light mode";
+        }
+    }
 
-    // nav animation
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all collapse elements on the page
+        var collapseElements = document.querySelectorAll('.collapse');
+
+        collapseElements.forEach(function(collapseElement) {
+            // Find the corresponding toggle using the href attribute
+            var toggle = document.querySelector('[data-bs-toggle="collapse"][href="#' + collapseElement.id + '"]');
+            if (toggle) {
+                collapseElement.addEventListener('show.bs.collapse', function () {
+                    toggle.classList.add('active');
+                });
+                collapseElement.addEventListener('hide.bs.collapse', function () {
+                    toggle.classList.remove('active');
+                });
+            }
+        });
+    });
+
+    // mobile menu animation
 
     TweenMax.from("#brand", 1, {
         delay: 0.4,
@@ -215,10 +221,6 @@
         ease: Expo.easeInOut
     }, 0.1);
 
-    // nav animation ends
-
     new WOW().init();
 
     </script>
-</body>
-</html>
