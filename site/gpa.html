@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sepehr Akbari's personal website">
+    <meta name="keywords" content="Sepehr Akbari, Sepehr, Akbari, Lake Forest College, LFC">
+    <meta name="author" content="Sepehr Akbari">
+
+    <title>Sepehr Akbari | GPA</title>
+
+    <link rel="stylesheet" href="/styles/gpa.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/pygment_trac.css">
+    <script src="/scripts/scripts.js" defer></script>
+    <script src="/scripts/gpa.js" defer></script>
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1><a href="/">Sepehr Akbari</a></h1>
+                <img src="/content/me.jpeg" alt="me">
+                <br><br>
+                <p>Contact – <br><a href="mailto: akbaris79@lakeforest.edu">akbaris79 [at] lakeforest.edu</a><br>
+                        <a href="mailto: isepehrakbari@gmail.com">i sepehr akbari [at] gmail</a><br>
+                    GitHub – <a href="https://github.com/SepehrAkbari" target="_blank">SepehrAkbari</a><br>
+                    <a href="/content/docs/resume-sepehr.pdf" target="_blank">Resume</a>
+                </p>
+            </header>
+            <section>
+                <h2>GPA Calculator</h2>
+                <p>Current GPA: <span class="gpa-display">N/A</span></p>
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Course</th>
+                        <th>Credits</th>
+                        <th>Grade</th>
+                    </tr>
+                    </thead>
+                    <tbody id="course-table-body">
+                    <!---->
+                    </tbody>
+                </table>
+                <p>
+                    <a href="#" id="add-row">Add</a> |
+                    <a href="#" id="delete-row">Delete</a> |
+                    <a href="#" id="calculate-gpa">Calculate GPA</a>
+                </p>
+            </section>
+            <footer>
+                <p>
+                    <a href="#" id="mode-toggle">Lights Off</a><br>
+                    &copy; Sepehr Akbari
+                </p>
+            </footer>
+        </div>
+        <script src="/scripts/scale.fix.js"></script>
+    </body>
+</html>

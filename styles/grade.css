@@ -1,0 +1,56 @@
+:root {
+    --bg-color: #fff;
+    --text-color: #040101;
+    --header-color: #222;
+    --link-color: #39c;
+    --link-hover: #069;
+    --pre-bg: #f8f8f8;
+    --pre-border: #e5e5e5;
+    --code-color: #333;
+    --h2-color: #393939;
+    --h3-h6-color: #494949;
+    --small-link-color: #777;
+    --header-ul-bg: #f4f4f4;
+    --header-ul-border: #e0e0e0;
+    --header-ul-link: #999;
+    --header-ul-active: #f0f0f0;
+    --dt-th-color: #444;
+  }
+  
+body.dark-mode {
+    --bg-color: #1a1a1a;
+    --text-color: #d9d9d9;
+    --header-color: #fff;
+    --link-color: #70c0ff;
+    --link-hover: #4da8ff;
+    --pre-bg: #2d2d2d;
+    --pre-border: #404040;
+    --code-color: #d9d9d9;
+    --h2-color: #cccccc;
+    --h3-h6-color: #bbbbbb;
+    --small-link-color: #999;
+    --header-ul-bg: #2d2d2d;
+    --header-ul-border: #404040;
+    --header-ul-link: #aaaaaa;
+    --header-ul-active: #383838;
+    --dt-th-color: #bbbbbb;
+}
+
+.grade-display, .letter-display {
+    font-weight: 500;
+    color: var(--header-color);
+}
+
+table input {
+    border: 1px solid var(--pre-border);
+    border-radius: 3px;
+    padding: 2px 5px;
+    font: inherit;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+table input:focus {
+    outline: none;
+    border-color: var(--link-color);
+}
